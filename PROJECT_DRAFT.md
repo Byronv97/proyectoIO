@@ -1,5 +1,29 @@
 # Aplicación de la programación lineal para optimizar la producción de Dulce Trigo
 
+## Índice
+
+1. Introducción
+2. Planteamiento del problema
+3. Justificación
+4. Objetivos generales y mediatos
+5. Marco teórico
+6. Metodología
+7. Datos del caso
+8. Formulación del modelo
+9. Solución mediante el método gráfico
+10. Resultado óptimo
+11. Aplicación web
+12. Evaluación de resultados
+13. Conclusiones
+14. Recomendaciones
+15. Apéndice
+16. Video demostrativo
+17. Cuestionamientos del proyecto
+18. Bibliografía y e-grafía
+19. Cronograma y entrega
+
+> Al trasladar este borrador a Word o PDF se deben actualizar los números de página del índice.
+
 ## 1. Introducción
 
 La Investigación de Operaciones proporciona modelos matemáticos para apoyar la toma de decisiones cuando existen recursos limitados. Una de sus herramientas principales es la programación lineal, que permite determinar la mejor combinación de actividades cuando la relación entre los recursos y las decisiones puede expresarse mediante ecuaciones o desigualdades lineales.
@@ -25,13 +49,13 @@ Resolver el problema mediante programación lineal permite sustituir una decisi�
 
 La aplicación web facilita la demostración del modelo porque permite ingresar los valores, observar la región factible, revisar los puntos extremos y comprobar la solución óptima.
 
-## 4. Objetivos
+## 4. Objetivos generales y mediatos
 
 ### 4.1 Objetivo general
 
 Aplicar la programación lineal y el método gráfico para determinar la combinación de productos que maximiza el margen semanal de Dulce Trigo.
 
-### 4.2 Objetivos específicos
+### 4.2 Objetivos mediatos (específicos)
 
 1. Definir las variables de decisión del problema.
 2. Identificar el margen y el consumo de recursos de cada producto.
@@ -167,9 +191,11 @@ Z = 40(15) + 50(30) = Q2,100
 
 La harina y la capacidad son recursos totalmente utilizados. La mano de obra conserva una holgura de 15 horas.
 
-## 11. Aplicación web
+## 11. Aplicación web (práctica y reporte de resultados)
 
 La aplicación **Dulce Trigo Optimizer** fue desarrollada en Python con Streamlit. Su función es demostrar el modelo de forma interactiva.
+
+Esta sección corresponde a la parte práctica del marco teórico: presenta el sistema desarrollado, los resultados obtenidos y la evidencia que se explicará en el video.
 
 La aplicación permite:
 
@@ -191,6 +217,21 @@ El modelo determina que la producción combinada de 15 lotes de galletas y 30 lo
 
 La aplicación permite modificar los valores para observar cómo cambia la región factible y verificar que la solución depende de los márgenes y de la disponibilidad de los recursos.
 
+### 12.1 Indicadores y mediciones
+
+| Indicador | Resultado | Interpretación |
+|---|---:|---|
+| Harina utilizada | 100% | Es un recurso limitante. |
+| Mano de obra utilizada | 87.5% | Quedan 15 horas disponibles. |
+| Capacidad utilizada | 100% | Es un recurso limitante. |
+| Margen máximo | Q2,100 | Se obtiene en `(15, 30)`. |
+| Promedio del margen en los puntos extremos | Q1,530 | Promedio de los cinco puntos evaluados. |
+| Rango entre el menor y mayor margen | Q2,100 | Diferencia entre Q0 y Q2,100. |
+
+### 12.2 Comentarios de los resultados
+
+La solución óptima no significa producir la mayor cantidad de un solo producto, sino encontrar la combinación que aprovecha mejor los recursos. La harina y la capacidad determinan la frontera de la solución, mientras que las 15 horas de mano de obra no utilizadas indican que aumentar únicamente ese recurso no cambiaría el resultado actual.
+
 ## 13. Conclusiones
 
 1. La programación lineal permite representar la decisión de producción mediante variables, una función objetivo y restricciones.
@@ -207,7 +248,24 @@ La aplicación permite modificar los valores para observar cómo cambia la regi�
 3. No asignar más mano de obra sin revisar antes si aumentan la demanda o los demás recursos.
 4. Utilizar la aplicación para probar escenarios alternativos antes de modificar la planificación.
 
-## 15. Video demostrativo
+## 15. Apéndice
+
+El apéndice final debe incluir las siguientes evidencias:
+
+- **Apéndice A:** tabla de datos del caso.
+- **Apéndice B:** gráfica de las restricciones y región factible.
+- **Apéndice C:** tabla de puntos extremos y márgenes.
+- **Apéndice D:** capturas de la aplicación web.
+- **Apéndice E:** captura de la URL pública desplegada.
+- **Apéndice F:** evidencia de las pruebas automáticas del sistema.
+
+Las tablas de datos, puntos extremos y uso de recursos ya están incorporadas en las secciones correspondientes; al generar el documento final se deben repetir o referenciar dentro de este apéndice.
+
+### Gráfica del caso base
+
+![Región factible y solución óptima](assets/region_factible.svg)
+
+## 16. Video demostrativo
 
 El video presentará, en este orden:
 
@@ -219,10 +277,71 @@ El video presentará, en este orden:
 6. Los puntos extremos y el margen de cada uno.
 7. La solución óptima y el uso de los recursos.
 
-## 16. Preguntas del proyecto
+## 17. Cuestionamientos del proyecto
 
-Esta sección se completará con las preguntas 11.1 a 11.10 en cuanto se incorpore su texto exacto.
+### 17.1 ¿Qué lo motivó a seleccionar el tema elegido?
 
-## 17. Bibliografía
+Se seleccionó la programación lineal porque es un tema central de Investigación de Operaciones y permite demostrar de forma clara cómo se toman decisiones cuando existen recursos limitados. También se eligió porque puede integrarse con una aplicación web, relacionando los conocimientos del curso con la formación de Ingeniería en Sistemas.
 
-Se incorporarán los materiales de clase proporcionados para Investigación de Operaciones, programación lineal, método gráfico y método Simplex, utilizando los datos bibliográficos que aparecen en sus portadas.
+### 17.2 Evaluación de los motivos internos y externos
+
+Los motivos internos fueron el interés por comprender mejor el método gráfico, practicar la formulación de modelos y desarrollar una herramienta funcional. Los motivos externos fueron los requisitos del curso, la necesidad de presentar un caso práctico y la posibilidad de compartir la aplicación mediante una plataforma gratuita.
+
+### 17.3 ¿Qué estrategias utilizó para el desarrollo del proyecto?
+
+Se delimitó el problema a dos variables para mantenerlo resoluble mediante el método gráfico. Primero se formuló y comprobó el modelo matemático; después se desarrolló el solver, la interfaz web y las gráficas. Finalmente se realizaron pruebas automáticas, pruebas manuales y control de versiones mediante GitHub.
+
+### 17.4 ¿Es necesario el financiamiento para este tipo de proyectos académicos?
+
+No es indispensable para este proyecto porque se utilizaron herramientas gratuitas, un entorno local y un servicio de despliegue gratuito. Sin embargo, un proyecto de mayor alcance podría requerir financiamiento para servidores, dominio, soporte técnico, diseño y mantenimiento.
+
+### 17.5 ¿Le pondría algún precio a las actividades del tema desarrollado y cómo financió su proyecto?
+
+Como proyecto académico no se cobrará por su elaboración. El desarrollo se financió con recursos propios, computadora, conexión a Internet y herramientas gratuitas. En un escenario comercial se podría ofrecer una versión educativa sin costo y cobrar por personalizaciones, soporte o adaptación del modelo a una empresa.
+
+### 17.6 ¿Cuál sería el mercado meta para su proyecto?
+
+El mercado meta principal serían estudiantes y docentes que necesiten demostrar programación lineal. Como mercado secundario se consideran micro y pequeñas empresas de producción que necesiten analizar combinaciones de productos y recursos limitados.
+
+### 17.7 Cronograma de actividades
+
+| Fecha | Actividad |
+|---|---|
+| 5 de octubre de 2026 | Selección del tema y definición del alcance. |
+| 6 de octubre de 2026 | Elaboración del problema, objetivos y datos del caso. |
+| 7 de octubre de 2026 | Formulación y verificación del modelo matemático. |
+| 8 de octubre de 2026 | Desarrollo del solver y la gráfica. |
+| 9 de octubre de 2026 | Construcción de la interfaz web. |
+| 10 de octubre de 2026 | Pruebas locales y corrección de resultados. |
+| 11 de octubre de 2026 | Organización del repositorio y despliegue web. |
+| 12 de octubre de 2026 | Redacción del informe y preparación de evidencias. |
+| 13 de octubre de 2026 | Grabación y revisión del video. |
+| 14 de octubre de 2026 | Integración de apéndices, bibliografía y cuestionamientos. |
+| 15 de octubre de 2026 | Revisión final del documento y del enlace público. |
+| 16 de octubre de 2026 | Entrega virtual en Canvas antes de las 23:00 horas. |
+
+### 17.8 ¿Qué lecciones aprendió?
+
+Se aprendió que la formulación correcta del modelo es tan importante como la programación. También se comprendió la relación entre restricciones, región factible y solución óptima, así como la importancia de validar los cálculos antes de publicar una aplicación.
+
+### 17.9 ¿Qué riesgos potenciales surgieron y cómo los solventó?
+
+Los principales riesgos fueron formular restricciones incorrectas, obtener una región factible vacía o no acotada, cometer errores en las intersecciones y enfrentar problemas de dependencias durante el despliegue. Se solventaron mediante cálculo manual, validaciones del solver, pruebas automáticas, ejecución local y documentación de dependencias.
+
+### 17.10 ¿Cómo aseguró la calidad del trabajo?
+
+La calidad se aseguró comparando el resultado del sistema con la solución manual del método gráfico. Además, se ejecutaron seis pruebas automáticas, se verificó la compilación del código, se probó la interacción de Streamlit y se comprobó que el servidor local respondiera correctamente. El código también quedó versionado en GitHub.
+
+## 18. Bibliografía y e-grafía
+
+- Universidad Mariano Gálvez. (2026). *Introducción a la Investigación de Operaciones*. Material de clase.
+- Universidad Mariano Gálvez. (2026). *Aplicación de la Investigación de Operaciones*. Material de clase.
+- Universidad Mariano Gálvez. (2026). *Programación lineal: ejemplos usando el método gráfico*. Material de clase.
+- Universidad Mariano Gálvez. (2026). *Método gráfico: teoría*. Material de clase.
+- Universidad Mariano Gálvez. (2026). *Método Simplex*. Material de clase.
+- Streamlit. (2026). *Streamlit Community Cloud documentation*. https://docs.streamlit.io/deploy/streamlit-community-cloud
+- Python Software Foundation. (2026). *Python Documentation*. https://docs.python.org/3/
+
+## 19. Cronograma y entrega
+
+La entrega virtual se preparará en formato PDF para subirla a Canvas el 16 de octubre de 2026 antes de las 23:00 horas. También se preparará una copia impresa para la exposición física. El video, la URL pública de la aplicación y el repositorio se incorporarán como evidencias complementarias.

@@ -48,3 +48,7 @@ python -m unittest -v
 ## Relacion con el proyecto
 
 La aplicacion es el complemento practico del informe. La explicacion academica debe incluir las variables, la funcion objetivo, las restricciones, la region factible, los vertices y la interpretacion de la solucion.
+
+## Informe
+
+El borrador del informe académico se encuentra en `PROJECT_DRAFT.md`. Incluye el planteamiento, la formulación matemática, la solución, la evaluación, el cronograma y las respuestas a los cuestionamientos del proyecto.
