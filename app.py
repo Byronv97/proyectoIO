@@ -167,15 +167,16 @@ def _show_results(
 
 
 st.set_page_config(
-    page_title="Dulce Trigo Optimizer",
+    page_title="Sistema de Optimización de Producción",
     layout="wide",
 )
 
-st.title("Dulce Trigo Optimizer")
+st.title("Sistema de Optimización de Producción")
 
 st.markdown(
-    "Esta herramienta determina la combinacion de dos productos que maximiza "
-    "el margen de contribucion respetando hasta tres recursos limitados."
+    "Caso de estudio: Dulce Trigo. Esta herramienta determina la combinacion "
+    "de dos productos que maximiza el margen de contribucion respetando hasta "
+    "tres recursos limitados."
 )
 
 with st.form("model_form"):

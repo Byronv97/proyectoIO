@@ -193,7 +193,7 @@ La harina y la capacidad son recursos totalmente utilizados. La mano de obra con
 
 ## 11. Aplicación web (práctica y reporte de resultados)
 
-La aplicación **Dulce Trigo Optimizer** fue desarrollada en Python con Streamlit. Su función es demostrar el modelo de forma interactiva.
+El **Sistema de Optimización de Producción** fue desarrollado en Python con Streamlit. Utiliza Dulce Trigo como caso de estudio y demuestra el modelo de forma interactiva.
 
 Esta sección corresponde a la parte práctica del marco teórico: presenta el sistema desarrollado, los resultados obtenidos y la evidencia que se explicará en el video.
 

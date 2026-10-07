@@ -1,4 +1,4 @@
-# Dulce Trigo Optimizer
+# Sistema de Optimización de Producción
 
 Aplicacion web educativa para demostrar programacion lineal mediante el metodo grafico.
 
@@ -47,7 +47,7 @@ python -m unittest -v
 
 ## Relacion con el proyecto
 
-La aplicacion es el complemento practico del informe. La explicacion academica debe incluir las variables, la funcion objetivo, las restricciones, la region factible, los vertices y la interpretacion de la solucion.
+La aplicacion es el complemento practico del informe. La explicacion academica debe incluir las variables, la funcion objetivo, las restricciones, la region factible, los vertices y la interpretacion de la solucion. Dulce Trigo es el caso de estudio utilizado por el sistema.
 
 ## Informe
 
