@@ -209,7 +209,7 @@ La aplicación permite:
 - Mostrar la región factible.
 - Presentar la solución óptima y las holguras.
 
-El código fuente y las instrucciones de ejecución se encuentran en el repositorio del proyecto. La versión publicada se compartirá mediante una URL de Streamlit Community Cloud.
+El código fuente y las instrucciones de ejecución se encuentran en el repositorio del proyecto. La versión publicada está disponible en [Sistema de Optimización de Producción](https://proyecto-operation-investigation.streamlit.app/).
 
 ## 12. Evaluación de resultados
 
@@ -267,15 +267,21 @@ Las tablas de datos, puntos extremos y uso de recursos ya están incorporadas en
 
 ## 16. Video demostrativo
 
-El video presentará, en este orden:
+El video tendrá una duración aproximada de 60 a 90 segundos. Se mostrará la aplicación mientras se presenta el siguiente diálogo:
 
-1. El problema de Dulce Trigo.
-2. Las variables y los datos.
-3. La función objetivo y las restricciones.
-4. La aplicación web.
-5. La solución gráfica.
-6. Los puntos extremos y el margen de cada uno.
-7. La solución óptima y el uso de los recursos.
+> Buenos días. Nuestro proyecto se titula “Aplicación de la programación lineal mediante el método gráfico para optimizar la producción de Dulce Trigo”.
+>
+> El problema consiste en determinar cuántos lotes de galletas y cupcakes se deben producir para obtener el mayor margen, utilizando recursos limitados.
+>
+> Definimos `x` como los lotes de galletas y `y` como los lotes de cupcakes. El modelo considera harina, mano de obra y capacidad de producción.
+>
+> El sistema permite ingresar los datos, calcular las intersecciones, mostrar la región factible y evaluar los puntos extremos.
+>
+> Con los datos del caso, la solución óptima es producir 15 lotes de galletas y 30 lotes de cupcakes, obteniendo un margen máximo de Q2,100.
+>
+> Concluimos que la programación lineal ayuda a utilizar mejor los recursos y tomar una decisión fundamentada. La aplicación está disponible en el enlace mostrado en pantalla.
+
+Durante el diálogo se deben mostrar la pantalla de datos, el botón **Resolver modelo**, la gráfica y el resultado final.
 
 ## 17. Cuestionamientos del proyecto
 
@@ -344,4 +350,4 @@ La calidad se aseguró comparando el resultado del sistema con la solución manu
 
 ## 19. Cronograma y entrega
 
-La entrega virtual se preparará en formato PDF para subirla a Canvas el 16 de octubre de 2026 antes de las 23:00 horas. También se preparará una copia impresa para la exposición física. El video, la URL pública de la aplicación y el repositorio se incorporarán como evidencias complementarias.
+La entrega virtual se preparará en formato PDF para subirla a Canvas el 16 de octubre de 2026 antes de las 23:00 horas. También se preparará una copia impresa para la exposición física. El video, la URL pública de la aplicación (`https://proyecto-operation-investigation.streamlit.app/`) y el repositorio se incorporarán como evidencias complementarias.
