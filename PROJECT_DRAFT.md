@@ -22,7 +22,7 @@
 18. Bibliografía y e-grafía
 19. Cronograma y entrega
 
-> Al trasladar este borrador a Word o PDF se deben actualizar los números de página del índice.
+> El índice se actualizará después de incorporar la carátula manual y confirmar la paginación final.
 
 ## 1. Introducción
 

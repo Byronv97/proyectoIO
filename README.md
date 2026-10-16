@@ -52,3 +52,14 @@ La aplicacion es el complemento practico del informe. La explicacion academica d
 ## Informe
 
 El borrador del informe académico se encuentra en `PROJECT_DRAFT.md`. Incluye el planteamiento, la formulación matemática, la solución, la evaluación, el cronograma y las respuestas a los cuestionamientos del proyecto.
+
+## Generar el PDF del informe
+
+El informe se genera sin carátula para permitir su edición manual posterior.
+
+```powershell
+python -m pip install -r requirements-report.txt
+python build_report.py
+```
+
+El resultado se guarda como `INFORME_PROYECTO.pdf`.
