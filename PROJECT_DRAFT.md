@@ -267,21 +267,21 @@ Las tablas de datos, puntos extremos y uso de recursos ya están incorporadas en
 
 ## 16. Video demostrativo
 
-El video tendrá una duración aproximada de 60 a 90 segundos. Se mostrará la aplicación mientras se presenta el siguiente diálogo:
+El video tendrá una duración aproximada de 60 a 75 segundos. Se mostrará la aplicación mientras se presenta el siguiente diálogo:
 
-> Buenos días. Nuestro proyecto se titula “Aplicación de la programación lineal mediante el método gráfico para optimizar la producción de Dulce Trigo”.
+> Buenos días. Presentamos nuestro proyecto de programación lineal mediante el método gráfico, aplicado al caso de producción de Dulce Trigo.
 >
-> El problema consiste en determinar cuántos lotes de galletas y cupcakes se deben producir para obtener el mayor margen, utilizando recursos limitados.
+> El objetivo es determinar cuántos lotes de galletas y cupcakes se deben producir para maximizar el margen utilizando harina, mano de obra y capacidad limitada.
 >
-> Definimos `x` como los lotes de galletas y `y` como los lotes de cupcakes. El modelo considera harina, mano de obra y capacidad de producción.
+> En la pantalla ingresamos los márgenes de cada producto, el consumo de recursos y las disponibilidades. La variable `x` representa las galletas y la variable `y` representa los cupcakes.
 >
-> El sistema permite ingresar los datos, calcular las intersecciones, mostrar la región factible y evaluar los puntos extremos.
+> Al presionar “Resolver modelo”, el sistema genera las restricciones, calcula las intersecciones y conserva únicamente los puntos factibles.
 >
-> Con los datos del caso, la solución óptima es producir 15 lotes de galletas y 30 lotes de cupcakes, obteniendo un margen máximo de Q2,100.
+> Luego muestra la región factible, evalúa cada punto extremo y señala la solución óptima: 15 lotes de galletas y 30 lotes de cupcakes, con un margen máximo de Q2,100.
 >
-> Concluimos que la programación lineal ayuda a utilizar mejor los recursos y tomar una decisión fundamentada. La aplicación está disponible en el enlace mostrado en pantalla.
+> La solución utiliza completamente la harina y la capacidad, y deja una holgura de 15 horas de mano de obra. Así, el sistema convierte el modelo matemático en una decisión clara y verificable.
 
-Durante el diálogo se deben mostrar la pantalla de datos, el botón **Resolver modelo**, la gráfica y el resultado final.
+Durante el diálogo se deben mostrar, en este orden, la pantalla de datos, el botón **Resolver modelo**, la tabla de puntos extremos, la gráfica y las tarjetas del resultado final. No es necesario leer todas las ecuaciones; deben permanecer visibles en pantalla.
 
 ## 17. Cuestionamientos del proyecto
 

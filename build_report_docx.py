@@ -2,6 +2,7 @@
 
 from pathlib import Path
 import re
+import argparse
 
 import matplotlib.pyplot as plt
 from docx import Document
@@ -111,7 +112,7 @@ def add_paragraph(document: Document, text: str, style: str | None = None) -> No
     paragraph.add_run(clean_inline(text))
 
 
-def build_document() -> None:
+def build_document(output: Path = OUTPUT) -> None:
     document = Document()
     set_document_style(document)
     document.core_properties.title = "Aplicación de la programación lineal para optimizar la producción de Dulce Trigo"
@@ -207,9 +208,18 @@ def build_document() -> None:
             index += 1
         add_paragraph(document, " ".join(paragraph_lines))
 
-    document.save(OUTPUT)
-    print(f"Word generado: {OUTPUT}")
+    document.save(output)
+    print(f"Word generado: {output}")
 
 
 if __name__ == "__main__":
-    build_document()
+    parser = argparse.ArgumentParser(description="Genera el informe editable en Word.")
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=OUTPUT,
+        help="Nombre o ruta del archivo Word de salida.",
+    )
+    arguments = parser.parse_args()
+    output = arguments.output if arguments.output.is_absolute() else ROOT / arguments.output
+    build_document(output)
