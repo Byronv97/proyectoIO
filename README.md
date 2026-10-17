@@ -63,3 +63,12 @@ python build_report.py
 ```
 
 El resultado se guarda como `INFORME_PROYECTO.pdf`.
+
+## Generar una versión editable en Word
+
+```powershell
+python -m pip install -r requirements-report.txt
+python build_report_docx.py
+```
+
+El resultado se guarda como `INFORME_PROYECTO_EDITABLE.docx`.

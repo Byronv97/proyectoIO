@@ -6,5 +6,6 @@ __pycache__/
 .pytest_cache/
 .streamlit/secrets.toml
 .streamlit/
+assets/region_factible.png
 *.log
 .DS_Store
